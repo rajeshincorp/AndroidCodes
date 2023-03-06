@@ -1,1 +1,7 @@
-Activity A and Activity B
+companion object {
+        private var fragmentList: ArrayList<Fragment> = arrayListOf()
+        fun newInstance(fragList: ArrayList<Fragment>): AttemptsFragment{
+            fragmentList = fragList
+            return AttemptsFragment()
+        }
+    }
